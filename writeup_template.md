@@ -121,10 +121,15 @@ The following adjustments were made:
 ####1. Choose five German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
 
 Eight German traffic signs were downloaded from the web:
-
-![alt text](https://github.com/BVG85/Project-2-Traffic-Sign-Classifier/blob/master/new/1.jpg?raw=true&s=200)  ![alt text](https://github.com/BVG85/Project-2-Traffic-Sign-Classifier/blob/master/new/2.jpg?raw=true) ![alt text](https://github.com/BVG85/Project-2-Traffic-Sign-Classifier/blob/master/new/3.jpg?raw=true) 
-![alt text](https://github.com/BVG85/Project-2-Traffic-Sign-Classifier/blob/master/new/4.jpg?raw=true)  ![alt text](https://github.com/BVG85/Project-2-Traffic-Sign-Classifier/blob/master/new/5.jpg?raw=true) ![alt text](https://github.com/BVG85/Project-2-Traffic-Sign-Classifier/blob/master/new/6.jpg?raw=true) ![alt text](https://github.com/BVG85/Project-2-Traffic-Sign-Classifier/blob/master/new/7.jpg?raw=true) ![alt text](https://github.com/BVG85/Project-2-Traffic-Sign-Classifier/blob/master/new/8.jpg?raw=true) 
-<img src="https://github.com/BVG85/Project-2-Traffic-Sign-Classifier/blob/master/new/8.jpg" width="400" height="790">
+ 
+<img src="https://github.com/BVG85/Project-2-Traffic-Sign-Classifier/blob/master/new/1.jpg" width="120" height="120">
+<img src="https://github.com/BVG85/Project-2-Traffic-Sign-Classifier/blob/master/new/2.jpg" width="120" height="120">
+<img src="https://github.com/BVG85/Project-2-Traffic-Sign-Classifier/blob/master/new/3.jpg" width="120" height="120">
+<img src="https://github.com/BVG85/Project-2-Traffic-Sign-Classifier/blob/master/new/4.jpg" width="120" height="120">
+<img src="https://github.com/BVG85/Project-2-Traffic-Sign-Classifier/blob/master/new/5.jpg" width="120" height="120">
+<img src="https://github.com/BVG85/Project-2-Traffic-Sign-Classifier/blob/master/new/6.jpg" width="120" height="120">
+<img src="https://github.com/BVG85/Project-2-Traffic-Sign-Classifier/blob/master/new/7.jpg" width="120" height="120">
+<img src="https://github.com/BVG85/Project-2-Traffic-Sign-Classifier/blob/master/new/8.jpg" width="120" height="120">
 
 The fourth and seventh images maybe difficult to classify as they are on an angle and similar.
 
