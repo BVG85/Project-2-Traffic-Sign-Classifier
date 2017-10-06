@@ -122,7 +122,7 @@ The following adjustments were made:
 
 Eight German traffic signs were downloaded from the web:
 
-![alt text](https://github.com/BVG85/Project-2-Traffic-Sign-Classifier/blob/master/new/1.jpg?raw=true){:height="200px" width="200px"}   ![alt text](https://github.com/BVG85/Project-2-Traffic-Sign-Classifier/blob/master/new/2.jpg?raw=true) ![alt text](https://github.com/BVG85/Project-2-Traffic-Sign-Classifier/blob/master/new/3.jpg?raw=true) 
+![alt text](https://github.com/BVG85/Project-2-Traffic-Sign-Classifier/blob/master/new/1.jpg?raw=true&s=200)  ![alt text](https://github.com/BVG85/Project-2-Traffic-Sign-Classifier/blob/master/new/2.jpg?raw=true) ![alt text](https://github.com/BVG85/Project-2-Traffic-Sign-Classifier/blob/master/new/3.jpg?raw=true) 
 ![alt text](https://github.com/BVG85/Project-2-Traffic-Sign-Classifier/blob/master/new/4.jpg?raw=true)  ![alt text](https://github.com/BVG85/Project-2-Traffic-Sign-Classifier/blob/master/new/5.jpg?raw=true) ![alt text](https://github.com/BVG85/Project-2-Traffic-Sign-Classifier/blob/master/new/6.jpg?raw=true) ![alt text](https://github.com/BVG85/Project-2-Traffic-Sign-Classifier/blob/master/new/7.jpg?raw=true) ![alt text](https://github.com/BVG85/Project-2-Traffic-Sign-Classifier/blob/master/new/8.jpg?raw=true) 
 
 The fourth and seventh images maybe difficult to classify as they are on an angle and similar.
