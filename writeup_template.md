@@ -117,10 +117,10 @@ The following adjustments were made:
 
 Eight German traffic signs were downloaded from the web:
 
-![alt text] (https://github.com/BVG85/Project-2-Traffic-Sign-Classifier/blob/master/new/1.jpg?raw=true)  ![alt text](https://github.com/BVG85/Project-2-Traffic-Sign-Classifier/blob/master/new/2.jpg?raw=true) ![alt text](https://github.com/BVG85/Project-2-Traffic-Sign-Classifier/blob/master/new/3.jpg?raw=true) 
+![alt text](https://github.com/BVG85/Project-2-Traffic-Sign-Classifier/blob/master/new/1.jpg?raw=true)   ![alt text](https://github.com/BVG85/Project-2-Traffic-Sign-Classifier/blob/master/new/2.jpg?raw=true) ![alt text](https://github.com/BVG85/Project-2-Traffic-Sign-Classifier/blob/master/new/3.jpg?raw=true) 
 ![alt text](https://github.com/BVG85/Project-2-Traffic-Sign-Classifier/blob/master/new/4.jpg?raw=true)  ![alt text](https://github.com/BVG85/Project-2-Traffic-Sign-Classifier/blob/master/new/5.jpg?raw=true) ![alt text](https://github.com/BVG85/Project-2-Traffic-Sign-Classifier/blob/master/new/6.jpg?raw=true) ![alt text](https://github.com/BVG85/Project-2-Traffic-Sign-Classifier/blob/master/new/7.jpg?raw=true) ![alt text](https://github.com/BVG85/Project-2-Traffic-Sign-Classifier/blob/master/new/8.jpg?raw=true) 
 
-The first image might be difficult to classify because ...
+The fourth and seventh images maybe difficult to classify as they are on an angle and similar.
 
 ####2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
@@ -128,14 +128,16 @@ Here are the results of the prediction:
 
 | Image			        |     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| Stop Sign      		| Stop sign   									| 
-| U-turn     			| U-turn 										|
-| Yield					| Yield											|
-| 100 km/h	      		| Bumpy Road					 				|
-| Slippery Road			| Slippery Road      							|
+| Right-of-way at the next intersection      		| Right-of-way at the next intersection   									| 
+| Go straight or right    			| Go straight or right										|
+| No vehicles				| No vehicles											|
+| Speed limit (30km/h)      		| Speed limit (30km/h)					 				|
+| Slippery road		| Slippery Road      							|
+| Stop		| Stop     							|
+| Speed limit (50km/h)			| Speed limit (50km/h)     							|
+| Double curve			| Double curve     							|
 
-
-The model was able to correctly guess 7 of the 8 traffic signs, which gives an accuracy of 87.5%. This compares favorably to the accuracy on the test set of 94.1 %
+The model was able to correctly guess 8 of the 8 traffic signs, which gives an accuracy of 100%. This compares favorably to the accuracy on the test set of 94.1 %
 
 ####3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
