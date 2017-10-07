@@ -27,15 +27,14 @@ The goals / steps of this project are the following:
 ###Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
 
 ---
-###Writeup / README
+### Writeup / README
 
-####1. Provide a Writeup / README that includes all the rubric points and how you addressed each one. You can submit your writeup as markdown or pdf. You can use this template as a guide for writing the report. The submission includes the project code.
+This file is the writeup for the Traffic Sign Classifier project as part of Udacity's Self-driving Car Engineer Nanodegree.
+The implementation of the various portions is discussed to address the rubic points.
 
-You're reading it! and here is a link to my [project code](https://github.com/udacity/CarND-Traffic-Sign-Classifier-Project/blob/master/Traffic_Sign_Classifier.ipynb)
+Project code can be found [here](https://github.com/BVG85/Project-2-Traffic-Sign-Classifier/blob/master/traffic_sign_classifier.ipynb)
 
-###Data Set Summary & Exploration
-
-####1. Provide a basic summary of the data set. In the code, the analysis should be done using python, numpy and/or pandas methods rather than hardcoding results manually.
+### Data Set Summary & Exploration
 
 The Numpy library was used to calculate the following summary statistics of the traffic
 signs data set:
@@ -52,9 +51,7 @@ Here is an exploratory visualization of the data set. It shows a random traffic 
 
 ![alt text][image1]
 
-###Design and Test a Model Architecture
-
-####1. Describe how you preprocessed the image data. What techniques were chosen and why did you choose these techniques? Consider including images showing the output of each preprocessing technique. Pre-processing refers to techniques such as converting to grayscale, normalization, etc. 
+### Design and Test a Model Architecture
 
 The data set was normalized and shuffled during preprocessing.
  
@@ -62,7 +59,7 @@ Normalization is done to get all the data features on the same scale.
 Shuffling is done on the training set as the order of the data may have an affect on how well the network trains.
 
 
-####2. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
+#### Model Architecture
 
 My final model consisted of the following layers:
 
@@ -85,7 +82,7 @@ My final model consisted of the following layers:
 |	Dropout			|												|
 |	Fully connected Layer Output					|	output = number of classes									|
 
-####3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
+#### Training the model & Hyperparameters 
 
 To train the model, the following hyperparameters were used:
  - 50 epochs
@@ -96,7 +93,7 @@ To train the model, the following hyperparameters were used:
 For the optimizer AdamOptimizer was used.
 
 
-####4. Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
+#### Final results & approach to finding the solution Approach taken
 
 The final model results were:
 - validation set accuracy of 94.9 %
@@ -114,26 +111,17 @@ The following adjustments were made:
 
 - Then the hyper parameters were tuned, mainly focussing on learning rate and keep_prob for dropout.
 - Later the batch size was decreased with good results.
-
  
-###Test a Model on New Images
+### Test a Model on New Images
 
-####1. Choose five German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
 
 Eight German traffic signs were downloaded from the web:
  
-<img src="https://github.com/BVG85/Project-2-Traffic-Sign-Classifier/blob/master/new/1.jpg" width="120" height="120">
-<img src="https://github.com/BVG85/Project-2-Traffic-Sign-Classifier/blob/master/new/2.jpg" width="120" height="120">
-<img src="https://github.com/BVG85/Project-2-Traffic-Sign-Classifier/blob/master/new/3.jpg" width="120" height="120">
-<img src="https://github.com/BVG85/Project-2-Traffic-Sign-Classifier/blob/master/new/4.jpg" width="120" height="120">
-<img src="https://github.com/BVG85/Project-2-Traffic-Sign-Classifier/blob/master/new/5.jpg" width="120" height="120">
-<img src="https://github.com/BVG85/Project-2-Traffic-Sign-Classifier/blob/master/new/6.jpg" width="120" height="120">
-<img src="https://github.com/BVG85/Project-2-Traffic-Sign-Classifier/blob/master/new/7.jpg" width="120" height="120">
-<img src="https://github.com/BVG85/Project-2-Traffic-Sign-Classifier/blob/master/new/8.jpg" width="120" height="120">
+<img src="https://github.com/BVG85/Project-2-Traffic-Sign-Classifier/blob/master/new/1.jpg" width="120" height="120"><img src="https://github.com/BVG85/Project-2-Traffic-Sign-Classifier/blob/master/new/2.jpg" width="120" height="120"><img src="https://github.com/BVG85/Project-2-Traffic-Sign-Classifier/blob/master/new/3.jpg" width="120" height="120"><img src="https://github.com/BVG85/Project-2-Traffic-Sign-Classifier/blob/master/new/4.jpg" width="120" height="120"><img src="https://github.com/BVG85/Project-2-Traffic-Sign-Classifier/blob/master/new/5.jpg" width="120" height="120"><img src="https://github.com/BVG85/Project-2-Traffic-Sign-Classifier/blob/master/new/6.jpg" width="120" height="120"><img src="https://github.com/BVG85/Project-2-Traffic-Sign-Classifier/blob/master/new/7.jpg" width="120" height="120"><img src="https://github.com/BVG85/Project-2-Traffic-Sign-Classifier/blob/master/new/8.jpg" width="120" height="120">
 
-The fourth and seventh images maybe difficult to classify as they are on an angle and similar.
+The fourth image may be difficult to classify and seventh images maybe difficult to classify as the sign itself is small within the image
 
-####2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
+#### Predictions on new traffic signs 
 
 Here are the results of the prediction:
 
@@ -150,7 +138,7 @@ Here are the results of the prediction:
 
 The model was able to correctly guess 8 of the 8 traffic signs, which gives an accuracy of 100%. This compares favorably to the accuracy on the test set of 94.1 %
 
-####3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
+####3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. 
 
 The code for making predictions on my final model is located in the 11th cell of the Ipython notebook.
 
