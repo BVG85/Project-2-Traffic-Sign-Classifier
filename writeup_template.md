@@ -36,7 +36,7 @@ signs data set:
 
 Here is an exploratory visualization of the data set. It shows a random traffic sign, along with the index number
 
-![alt text][image1]
+![alt text](https://github.com/BVG85/Project-2-Traffic-Sign-Classifier/blob/master/vis.png)
 
 ### Design and Test a Model Architecture
 
@@ -107,7 +107,7 @@ Eight German traffic signs were downloaded from the web:
 <img src="https://github.com/BVG85/Project-2-Traffic-Sign-Classifier/blob/master/new/1.jpg" width="120" height="120"> <img src="https://github.com/BVG85/Project-2-Traffic-Sign-Classifier/blob/master/new/2.jpg" width="120" height="120"> <img src="https://github.com/BVG85/Project-2-Traffic-Sign-Classifier/blob/master/new/3.jpg" width="120" height="120"> <img src="https://github.com/BVG85/Project-2-Traffic-Sign-Classifier/blob/master/new/4.jpg" width="120" height="120">
 <img src="https://github.com/BVG85/Project-2-Traffic-Sign-Classifier/blob/master/new/5.jpg" width="120" height="120"> <img src="https://github.com/BVG85/Project-2-Traffic-Sign-Classifier/blob/master/new/6.jpg" width="120" height="120"> <img src="https://github.com/BVG85/Project-2-Traffic-Sign-Classifier/blob/master/new/7.jpg" width="120" height="120"> <img src="https://github.com/BVG85/Project-2-Traffic-Sign-Classifier/blob/master/new/8.jpg" width="120" height="120">
 
-The fourth image may be difficult to classify and seventh images maybe difficult to classify as the sign itself is small within the image
+The fourth image may be difficult to classify and seventh images maybe difficult to classify as the sign itself is small within the image. Also, five and seven look similar, so the model may have some difficulty with these images.
 
 #### Predictions on new traffic signs 
 
@@ -115,16 +115,16 @@ Here are the results of the prediction:
 
 | Image			        |     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| Right-of-way at the next intersection      		| Right-of-way at the next intersection   									| 
+| Right-of-way at the next intersection      		| End of no passing  									| 
 | Go straight or right    			| Go straight or right										|
 | No vehicles				| No vehicles											|
 | Speed limit (30km/h)      		| Speed limit (30km/h)					 				|
 | Slippery road		| Slippery Road      							|
 | Stop		| Stop     							|
-| Speed limit (50km/h)			| Speed limit (50km/h)     							|
+| Speed limit (50km/h)			| Speed limit (30km/h)     							|
 | Double curve			| Double curve     							|
 
-The model was able to correctly guess 8 of the 8 traffic signs, which gives an accuracy of 100%. This compares favorably to the accuracy on the test set of 94.1 %
+The model was able to correctly guess 6 of the 8 traffic signs, which gives an accuracy of 100%. This compares favorably to the accuracy on the test set of 75%. On previous iterations of the model 87.5% and 100% accuraries were obtained.
 
 ####3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. 
 
