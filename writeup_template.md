@@ -83,8 +83,8 @@ For the optimizer AdamOptimizer was used.
 #### Final results & approach to finding the solution Approach taken
 
 The final model results were:
-- validation set accuracy of 94.9 %
-- test set accuracy of 94.1 %
+- validation set accuracy of 96.7 %
+- test set accuracy of 95.3 %
 
 The approach used was to start from the LeNet-5 architecture and adjust the model from there.
 The LeNet-5 model was chosen, as the assignment indicated that an accuracy of about 89% was possible on the validation set.
