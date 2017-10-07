@@ -209,7 +209,10 @@ For the eighth image, the model predicted the sign correctly:
 | 1.55301193e-24     			| Bicycles crossing				|
 | 2.58175611e-25		    | Go straight or left							|
 
-### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
-####1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
+### Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
 
+The network feature maps react with high activation to the sign's outlines as well as to the contrast in the sign's painted symbol against the sign'c background:
+
+
+![alt text](https://github.com/BVG85/Project-2-Traffic-Sign-Classifier/blob/master/fmap.png)
 
