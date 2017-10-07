@@ -126,22 +126,88 @@ Here are the results of the prediction:
 
 The model was able to correctly guess 6 of the 8 traffic signs, which gives an accuracy of 100%. This compares favorably to the accuracy on the test set of 75%. On previous iterations of the model 87.5% and 100% accuraries were obtained.
 
-####3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. 
+#### The top 5 softmax probabilities for each image along with the sign type of each probability. 
 
-The code for making predictions on my final model is located in the 11th cell of the Ipython notebook.
-
-For the first image, the model is relatively sure that this is a stop sign (probability of 0.6), and the image does contain a stop sign. The top five soft max probabilities were
+For the first image, the model has a very high probability for "end of no passing" sign, however the image contains a "right-of-way sign at the next intersection" sign. The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| .60         			| Stop sign   									| 
-| .20     				| U-turn 										|
-| .05					| Yield											|
-| .04	      			| Bumpy Road					 				|
-| .01				    | Slippery Road      							|
+| 9.99646187e-01        			| End of no passing    									| 
+| 3.53865616e-04     				| End of all speed and passing limits										|
+| 5.23706035e-12					| Priority road									|
+| 3.34431723e-12      			| Roundabout mandatory				 				|
+| 2.79893274e-12			    | Dangerous curve to the right      							|
+
+For the second image, the model predicted the sign correctly:
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 1.00000000e+00        			| Go straight or right   									| 
+| 3.90913001e-24   				| Keep right									|
+| 1.19299459e-25					| Turn left ahead								|
+| 9.23018412e-26     			| No vehicles		 				|
+| 6.99420410e-26		    | End of all speed and passing limits     							|
+
+For the third image, the model predicted the sign correctly:
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 1.00000000e+00        			| No vehicles   									| 
+| 1.17959672e-15   				| Yield									|
+| 1.96194767e-17					| Speed limit (30km/h)								|
+| 6.13155177e-19     			| No passing	 				|
+| 2.71654385e-20		    | Speed limit (30km/h)    							|
+
+For the fourth image, the model predicted the sign correctly. All other predictions were speed limits as well:
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 1.00000000e+00        			| Speed limit (30km/h)  									| 
+| 2.14057949e-25  				| Speed limit (50km/h)							|
+| 3.21331784e-32			| Speed limit (80km/h)								|
+| 0.00000000e+00     			| Speed limit (20km/h)				|
+| 0.00000000e+00		    | Speed limit (60km/h)   							|
+
+For the fifth image, the model predicted the sign correctly:
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 1.00000000e+00        			| Slippery road  									| 
+| 3.15522746e-20   				| Road work									|
+| 1.71059254e-20					| Beware of ice/snow							|
+| 1.56477443e-24     			| Dangerous curve to the left	 				|
+| 8.28894826e-27		    | Double curve    							|
+
+For the sixth image, the model predicted the sign correctly:
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 1.00000000e+00        			| Stop  									| 
+| 1.71826014e-13   				| Speed limit (20km/h)								|
+| 8.57121448e-14					| Speed limit (30km/h)					|
+| 2.64993903e-23     			| No passing 				|
+| 9.05511000e-26		    | No entry   							|
+
+For the seventh image, the model predicted the sign incorrectly. This could be to the size of the sign within the image, as well as the similarity to the "Speed limit (30km/h)" sign:
 
 
-For the second image ... 
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 9.99929667e-01        			| Speed limit (30km/h)  									| 
+| 7.03617479e-05  				| Speed limit (50km/h)							|
+| 2.18761077e-12			| Keep right								|
+| 4.13960451e-13     			| Roundabout mandatory				|
+| 6.90928613e-17		    | Speed limit (80km/h)  							|
+
+For the eighth image, the model predicted the sign correctly:
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 1.00000000e+00        			| Double curve 									| 
+| 5.14158247e-20  				| Beware of ice/snow								|
+| 3.74433725e-21				| Wild animals crossing				|
+| 1.55301193e-24     			| Bicycles crossing				|
+| 2.58175611e-25		    | Go straight or left							|
 
 ### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
 ####1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
